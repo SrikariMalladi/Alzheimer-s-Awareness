@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alzheimer's Awareness</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Alzheimer's Awareness</div>
+        <div class="menu-toggle">&#9776;</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#symptoms">Symptoms</a></li>
+            <li><a href="#prevention">Prevention</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#consultation">Consult a Doctor</a></li>
+        </ul>
+    </nav>
+
+   <!-- Hero Section -->
+<header id="home" class="hero">
+    <div class="hero-container">
+        <!-- Left Content -->
+        <div class="hero-text">
+            <h1><span class="highlight">Understanding Alzheimer's</span></h1>
+            <p>Raising awareness and supporting those affected.</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+        
+        <!-- Right Image -->
+        <div class="hero-image">
+            <img src="Free Vector _ Detailed doctors and nurses.jpeg" alt="Doctors and Nurses Illustration">
+        </div>
+    </div>
+</header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>What's Alzheimer's</h2>
+        <p>Alzheimer's disease is a progressive neurological disorder that affects memory and cognitive functions.</p>
+        
+        <!-- Embedded YouTube Video -->
+        <div class="video-container">
+            <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/wfLP8fFrOp0" 
+                title="Understanding Alzheimer's" 
+                frameborder="0" allowfullscreen>
+            </iframe>
+        </div>
+    </section>    
+
+    <!-- Symptoms Section -->
+<section id="symptoms" class="reveal">
+    <h2>Common Symptoms</h2>
+    <div class="symptom-list">
+        <div class="symptom">
+            <i class="fas fa-brain"></i>
+            <h3>Memory Loss</h3>
+        </div>
+        <div class="symptom">
+            <i class="fas fa-user-clock"></i>
+            <h3>Confusion</h3>
+        </div>
+        <div class="symptom">
+            <i class="fas fa-comments"></i>
+            <h3>Difficulty in Communication</h3>
+        </div>
+    </div>
+
+    <!-- Alzheimer's Stages -->
+    <div class="stages">
+        <div class="card">
+            <img src="early_stage.jpg" alt="Early Stage">
+            <h2>Early Stage</h2>
+            <p>Memory lapses, difficulty finding words, and trouble organizing tasks.</p>
+            <button onclick="showDetails('early-details')">Learn More</button>
+            <p id="early-details" class="details hidden">
+                In the early stage of Alzheimer's, individuals experience mild memory issues, forget names, and misplace objects.
+            </p>
+        </div>
+        <div class="card">
+            <img src="middle_stage.jpg" alt="Middle Stage">
+            <h2>Middle Stage</h2>
+            <p>Increased confusion, difficulty recognizing people, and mood changes.</p>
+            <button onclick="showDetails('middle-details')">Learn More</button>
+            <p id="middle-details" class="details hidden">
+                The middle stage is marked by greater memory loss, behavioral changes, and difficulties in everyday tasks.
+            </p>
+        </div>
+        <div class="card">
+            <img src="late_stage.jpg" alt="Late Stage">
+            <h2>Late Stage</h2>
+            <p>Severe memory loss, difficulty speaking, and full-time care needed.</p>
+            <button onclick="showDetails('late-details')">Learn More</button>
+            <p id="late-details" class="details hidden">
+                In the late stage, individuals require 24/7 care, experience severe cognitive decline, and struggle with communication.
+            </p>
+        </div>
+    </div>
+</section>
+<!-- Prevention Section -->
+<section id="prevention">
+    <div class="container">
+        <h2 class="section-title">Prevention Tips for Alzheimer's</h2>
+        <p class="section-subtitle">Adopting a healthy lifestyle can help reduce the risk of Alzheimer's.</p>
+
+        <div class="prevention-grid">
+            <div class="card reveal">
+                <img src="brain.jpeg" alt="Brain Activity">
+                <h3>Stay Mentally Active 🧩</h3>
+                <p>Engage in puzzles, reading, learning a new skill, or playing strategy games.</p>
+            </div>
+            <div class="card reveal">
+                <img src="healthy diet.jpeg" alt="Healthy Diet">
+                <h3>Maintain a Healthy Diet 🥗</h3>
+                <p>Eat more fruits, vegetables, whole grains, and omega-3 fatty acids.</p>
+            </div>
+            <div class="card reveal">
+                <img src="exercise.jpeg" alt="Exercise">
+                <h3>Exercise Regularly 🏃‍♂️</h3>
+                <p>Engage in 150 minutes of moderate exercise per week.</p>
+            </div>
+            <div class="card reveal">
+                <img src="sleep.jpeg" alt="Sleep Well">
+                <h3>Manage Stress & Sleep Well 😴</h3>
+                <p>Practice mindfulness and get 7-9 hours of sleep daily.</p>
+            </div>
+            <div class="card reveal">
+                <img src="social.jpeg" alt="Social Activity">
+                <h3>Stay Socially Connected 👥</h3>
+                <p>Join community activities, have conversations, and maintain strong relationships.</p>
+            </div>
+            <div class="card reveal">
+                <img src="healthcare.jpeg" alt="Healthcare">
+                <h3>Control Chronic Conditions ❤️</h3>
+                <p>Manage blood pressure, diabetes, and cholesterol for better brain health.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Consultation Section -->
+<section id="consultation">
+    <h2>Book a Consultation with a Brain Specialist</h2>
+    <form id="appointment-form">
+        
+        <!-- Doctor Selection -->
+        <label for="doctor">Select a Doctor:</label>
+        <select id="doctor" name="doctor" required>
+            <option value="" disabled selected>Select a Doctor</option>
+            <option value="Dr. V. P. Singh">Dr. V. P. Singh - Medanta, Gurgaon</option>
+            <option value="Dr. Rana Patir">Dr. Rana Patir - Fortis, Gurgaon</option>
+            <option value="Dr. Aditya Gupta">Dr. Aditya Gupta - Artemis, Gurgaon</option>
+            <option value="Dr. Sandeep Vaishya">Dr. Sandeep Vaishya - Fortis, Gurgaon</option>
+            <option value="Dr. Arun Saroha">Dr. Arun Saroha - Max Hospital, Gurgaon</option>
+        </select>
+            <button>Book Appointment</button>
+    <form id="appointmentForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="date">Preferred Appointment Date:</label>
+        <input type="date" id="date" required>
+
+        <label for="time">Preferred Time:</label>
+        <input type="time" id="time" name="time">
+
+        <button type="submit">Confirm Appointment</button>
+
+    </form>
+</section>
+<section id="upload-scans">
+    <h2>Upload Medical Scans</h2>
+    <form action="/upload_scans" method="post" enctype="multipart/form-data">
+        <label for="scan">Select Scan to Upload:</label>
+        <input type="file" id="scan" name="scan" accept=".jpg, .jpeg, .png, .pdf">
+        <button type="submit">Upload</button>
+    </form>
+</section>
+
+<section id="statistics">
+    <h2>Alzheimer's Statistics</h2>
+    <div class="stats-container">
+        <div class="stat-box">
+            <h3><span class="counter" data-target="55">0</span> million</h3>
+            <p>People worldwide living with Alzheimer's</p>
+        </div>
+        <div class="stat-box">
+            <h3><span class="counter" data-target="10">0</span>%</h3>
+            <p>People aged 65+ affected by Alzheimer's</p>
+        </div>
+        <div class="stat-box">
+            <h3><span class="counter" data-target="150">0</span> billion</h3>
+            <p>Annual global cost of dementia care</p>
+        </div>
+        <div class="stat-box">
+            <h3><span class="counter" data-target="60">0</span>%</h3>
+            <p>Unaware they have the disease</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="reveal">
+        <h2>Contact Us</h2>
+        <p>Email: support@alzheimersawareness.org</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Alzheimer's Awareness. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+</html>
